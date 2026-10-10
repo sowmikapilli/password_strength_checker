@@ -82,18 +82,12 @@ generateButton.addEventListener("click", () => {
   const password = shuffle(characters).join("");
 
   generatedPassword.value = password;
-  generatedPassword.type = "password";
-  showGenerated.textContent = "Show";
+  
   generatorMessage.textContent = "Password generated successfully.";
   checkPassword.value = password;
   checkPassword.dispatchEvent(new Event("input"));
 });
 
-showGenerated.addEventListener("click", () => {
-  const hidden = generatedPassword.type === "password";
-  generatedPassword.type = hidden ? "text" : "password";
-  showGenerated.textContent = hidden ? "Hide" : "Show";
-});
 
 copyButton.addEventListener("click", async () => {
   if (!generatedPassword.value) {
