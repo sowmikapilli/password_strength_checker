@@ -24,13 +24,13 @@
         <label><input type="checkbox" id="symbols" checked> Symbols (!@#)</label>
       </div>
 
-      <button id="generate">Generate Password</button>
+      <button id="generate" type="button">↻ Refresh Password</button>
 
-      <label for="generatedPassword">Generated password</label>
-      <div class="password-row">
-        <input type="password" id="generatedPassword" readonly placeholder="Your password will appear here">
-        <button id="showGenerated" type="button">Show</button>
-        <button id="copy" type="button">Copy</button>
+<label for="generatedPassword">Generated password</label>
+<div class="password-row">
+  <input type="text" id="generatedPassword" readonly placeholder="Click Refresh to generate">
+  <button id="copy" type="button">Copy</button>
+</div>
       </div>
       <p id="generatorMessage" aria-live="polite"></p>
     </section>
