@@ -2,7 +2,7 @@ const lengthInput = document.getElementById("length");
 const lengthValue = document.getElementById("lengthValue");
 const generateButton = document.getElementById("generate");
 const generatedPassword = document.getElementById("generatedPassword");
-const showGenerated = document.getElementById("showGenerated");
+
 const copyButton = document.getElementById("copy");
 const generatorMessage = document.getElementById("generatorMessage");
 
