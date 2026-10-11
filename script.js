@@ -7,7 +7,7 @@ const copyButton = document.getElementById("copy");
 const generatorMessage = document.getElementById("generatorMessage");
 
 const checkPassword = document.getElementById("checkPassword");
-const toggleCheck = document.getElementById("toggleCheck");
+
 const strength = document.getElementById("strength");
 const strengthBar = document.getElementById("strengthBar");
 
@@ -143,8 +143,3 @@ checkPassword.addEventListener("input", () => {
   checkStrength(checkPassword.value);
 });
 
-toggleCheck.addEventListener("click", () => {
-  const hidden = checkPassword.type === "password";
-  checkPassword.type = hidden ? "text" : "password";
-  toggleCheck.textContent = hidden ? "Hide" : "Show";
-});
